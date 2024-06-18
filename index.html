@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pavify Music Recco</title>
+</head>
+<body>
+    <h1 style="color:blueviolet">ENTER SONG:</h1>
+    <form method="POST">
+        <input type="text" name="user_text">
+        <button type="submit">Submit</button>
+    </form>
+    {% if result_array %}
+    <h2 style="color:rebeccapurple">RESULT:</h2>
+    <ul>
+        {% for item in result_array %}
+        <li style="color:rgb(255, 174, 0)">{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
